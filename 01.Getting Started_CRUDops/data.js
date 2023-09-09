@@ -1,0 +1,32 @@
+const person=[
+    {
+        "id":1,
+        "name":"Siddhesh",
+        "age":25,
+        "location":"Mumbai",
+        "job_profile":"Software"
+    },
+    {
+        "id":2,
+        "name":"Manish",
+        "age":25,
+        "location":"London",
+        "job_profile":"Sol.Architect"
+    },
+    {
+        "id":3,
+        "name":"Anand",
+        "age":24,
+        "location":"Thane",
+        "job_profile":"Mechanical"
+    },
+    {
+        "id":4,
+        "name":"Prince",
+        "age":26,
+        "location":"Mumbai",
+        "job_profile":"DBA"
+    }
+]
+
+module.exports={person}
