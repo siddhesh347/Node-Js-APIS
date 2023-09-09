@@ -1,0 +1,23 @@
+{
+  "name": "node-js-apis",
+  "version": "1.0.0",
+  "description": "Creating APIS for CRUD Operations using NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhesh347/Node-Js-APIS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhesh347/Node-Js-APIS/issues"
+  },
+  "homepage": "https://github.com/siddhesh347/Node-Js-APIS#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
