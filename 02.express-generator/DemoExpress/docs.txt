@@ -1,0 +1,40 @@
+ Authenticate and Authorization using Passport
+ Note: So in passport we install few packages:
+
+1. passort
+2.passport-local
+3.passport-local-mongoose
+4.mongoose (if not installed earlier)
+5. express-session (if not installed earlier)
+
+Steps:
+1.we need to make some changes in the app.js file following code should be added after the view engine line
+and before the logger line as follows
+
+app.set('view engine', 'ejs');
+
+--Session and Passport Code Started --
+app.use(expressSession({
+  resave:false,
+  saveUninitialized:false,
+  secret:'hello hello baye baye'
+}))
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(passport.serializeUser(usersRouter.serializeUser()));
+app.use(passport.deserializeUser(usersRouter.deserializeUser()));
+
+--Session and Passport Code Ended --
+app.use(logger('dev'));
+
+In the above code we are using the express session to allow to create the session and after the we are preparing
+to initialize the passport and after that we are using passort session wherein actual session for passport gets created .
+Session means we allow to store data on backend side. 
+serializeUser and deserializeUser -> You can consider them as the encryption and decryption of data ->It consists code which
+is responsible for hashing the data (encryption and decryption).
+
+Note:
+
+passport-> Structure
+passport-local-> Strategy(Heart)
+passport-local-mongoose-> Allowing for handling the hashing of the data.
